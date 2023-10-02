@@ -15,7 +15,7 @@ git clone https://github.com/NarinaK/React_App.git
 2. Перейдите в директорию проекта:
 
 ```
-cd books
+cd React_App
 ```
 
 3. Установите зависимости:
