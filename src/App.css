@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+body{
+    background-color: #EFF1F4;
+    width: 100%;
+    height: 1049px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.white_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #FFF;
+    width: 748px;
+    height: 775px;
+    /*align-content: center;*/
+    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+}
+
+.name_section{
+    position: absolute;
+    left: 36px;
+    top: 36px;
+    color: #393F61;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120% 
+}
+
+.add_new{
+    position: absolute;
+    right: 57px;
+    top: 41px;
+    width: 294px;
+    height: 54px;
+    border-radius: 10px;
+    background: #F18825;
+    border-width: 0; 
+    border-bottom: 4px solid #E36A13; 
+    
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+
+}
+
+table{
+    position: absolute;
+    left: 9px;
+    top: 148px; 
+    width: 720px;
+    border-collapse: collapse;
+    line-height: 24px; 
+    
+}
+
+thead{
+    height: 28px;
+    color: #393F61;
+    text-align: left;
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.number{
+    width: 40px;
+    text-align: center;
+}
+
+.author{
+    width: 140px;
+  
+}
+
+.name_of_book{
+    width: 285px;
+}
+
+.year {
+    width: 55px;
+}
+
+.genre{
+    width: 100px;
+}
+
+
+.edit{
+    width: auto;
+}
+
+tbody{
+   background-color: var(--Light-blue-2, rgb(248, 251, 255, 0.4));
+   height: 61px;
+   width: 720px;
+   font-family: Manrope;
+   
+}
+
+
+.format_id{
+    text-align: center;
+    color:  #393F61;
+    font-family: Manrope;
+    font-size: 18px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+
+.format_author{
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.format_name{
+    color: #393F61;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.format_year {
+    color: #393F61;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.format_genre{
+    color: #393F61;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+td{
+    border-top: 1px solid #FFF;
+    height: 61px;
+
+}
+
+.format_author{
+    color: #4DA3F7;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    text-decoration-line: underline;
+
+}
+
+.edit_button{
+    background: none;
+    border: none;
+    padding: 0;
+    color: #4DA3F7;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #FFF;
+    width: 484px;
+    height: 490px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+    
+
+}
+
+/*.modal_content{
+
+    position: absolute;
+    top: 15px;
+}
+*/
+
+.form_pos{
+    position: relative;
+    bottom: 31px;
+}
+
+.input_author, .input_book, .input_year, .input_genre {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 448px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid  #F18825;
+    background:  #FFF;
+    color: #393F61;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 1rem;
+
+}
+
+.label_author, .label_book, .label_year, .label_genre {
+    color: #6d6d6d;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.close_button{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #a8abac;
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.save_button{
+    width: 294px;
+    height: 58px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 18px;
+    border-radius: 10px;
+    background: #F18825;
+    border-width: 0; 
+    border-bottom: 4px solid #E36A13; 
+    bottom: 24px;
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+
+}
+
+.h2_add_label{
+    position: relative;
+    text-align: center;
+    color: #393F61;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    bottom: 40px;
+ 
+}
